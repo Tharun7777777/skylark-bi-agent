@@ -5,8 +5,8 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-st.secrets["MONDAY_API_KEY"]
 
+API_KEY = st.secrets["MONDAY_API_KEY"]
 url = "https://api.monday.com/v2"
 
 headers = {
@@ -72,3 +72,4 @@ def fetch_data():
 
 
     return df
+
