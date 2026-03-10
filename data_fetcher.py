@@ -3,6 +3,10 @@ import os
 import pandas as pd
 from dotenv import load_dotenv
 
+import streamlit as st
+
+
+
 load_dotenv()
 
 
@@ -72,4 +76,5 @@ def fetch_data():
 
 
     return df
+
 
