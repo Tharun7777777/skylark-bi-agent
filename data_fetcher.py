@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-API_KEY = os.getenv("MONDAY_API_KEY")
+st.secrets["MONDAY_API_KEY"]
 
 url = "https://api.monday.com/v2"
 
@@ -69,5 +69,6 @@ def fetch_data():
     df = pd.DataFrame(rows)
 
     df.fillna("Unknown", inplace=True)
+
 
     return df
