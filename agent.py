@@ -1,7 +1,7 @@
 import google.generativeai as genai
 import os
 from dotenv import load_dotenv
-
+import streamlit as st
 load_dotenv()
 
 genai.configure(api_key=st.secrets["GEMINI_API_KEY"])
@@ -30,3 +30,4 @@ Mention if data is incomplete.
 
 
     return response.text
+
