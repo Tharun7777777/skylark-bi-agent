@@ -1,0 +1,16 @@
+{
+  "errors": [
+    {
+      "message": "Cannot query field \"items\" on type \"Board\". Did you mean \"tags\" or \"views\"?",
+      "locations": [
+        {
+          "line": 5,
+          "column": 3
+        }
+      ]
+    }
+  ],
+  "extensions": {
+    "request_id": "2bb0ed37-5168-997c-80c4-5eb0c09bd845"
+  }
+}
