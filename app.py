@@ -15,12 +15,11 @@ st.dataframe(df.head())
 question = st.text_input("Ask a business question")
 
 if question:
-
-    answer = ask_agent(question, df)
+    with st.spinner("Analyzing business data..."):
+        answer = ask_agent(question, df)
 
     st.subheader("Insight")
-
-    st.write(answer)
+    st.write(answer))
 
 
 if st.button("Generate Leadership Update"):
@@ -29,5 +28,6 @@ if st.button("Generate Leadership Update"):
         "Give leadership summary about revenue, pipeline, sector performance",
         df
     )
+
 
     st.write(summary)
