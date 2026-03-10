@@ -19,7 +19,7 @@ if question:
         answer = ask_agent(question, df)
 
     st.subheader("Insight")
-    st.write(answer))
+    st.write(answer)
 
 
 if st.button("Generate Leadership Update"):
@@ -31,3 +31,4 @@ if st.button("Generate Leadership Update"):
 
 
     st.write(summary)
+
